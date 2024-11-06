@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AP Biology - Splash</title>
+    <title>AP Biology - Practice Questions</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Navbar --> 
+<!-- Navbar -->
 <header class="navbar">
     <a href="index.html"><img src="splash.png" alt="Splash Logo" class="logo"></a>
     <nav>
@@ -20,29 +20,68 @@
 </header>
 
 <!-- Main Content Wrapper -->
-<div class="main-content">
-    <!-- AP Biology Section -->
-    <section class="features">
-        <h2>AP Biology</h2>
-        <p>Explore comprehensive resources for AP Biology, including study guides, practice questions, and key concepts.</p>
-        <div class="feature-cards">
-            <div class="card">
-                <h3>Study Guides</h3>
-                <p>Detailed guides on various biology topics to help you prepare.</p>
-                <a href="#">Learn More</a>
+<div class="container">
+
+    <!-- Sidebar with Units -->
+    <aside class="sidebar">
+        <h2>AP Biology: Units</h2>
+        <ul class="unit-list">
+            <li><a href="apbiounit1.html">Unit 1 - Chemistry of Life</a></li>
+            <li><a href="apbiounit2.html">Unit 2 - Cell Structure and Function</a></li>
+            <li><a href="apbiounit3.html">Unit 3 - Cellular Energetics</a></li>
+            <li><a href="apbiounit4.html">Unit 4 - Cell Communication and Cell Cycle</a></li>
+            <li><a href="apbiounit5.html">Unit 5 - Heredity</a></li>
+            <li><a href="apbiounit6.html">Unit 6 - Gene Expression and Regulation</a></li>
+            <li><a href="apbiounit7.html">Unit 7 - Natural Selection</a></li>
+            <li><a href="apbiounit8.html">Unit 8 - Ecology</a></li>
+        </ul>
+    </aside>
+
+    <!-- Practice Questions Section -->
+    <main class="content">
+        <div class="header">
+            <h1>AP Biology Practice Questions</h1>
+            <p>Practice Questions for AP Biology Units</p>
+        </div>
+
+        <!-- Practice Question Card -->
+        <div class="question-card">
+            <div class="question-settings">
+                <select>
+                    <option>All units</option>
+                    <option>Unit 1</option>
+                    <option>Unit 2</option>
+                </select>
+                <select>
+                    <option>All topics</option>
+                    <option>Topic 1</option>
+                    <option>Topic 2</option>
+                </select>
+                <select>
+                    <option>5 questions</option>
+                    <option>10 questions</option>
+                </select>
+                <span class="difficulty">Easy</span>
             </div>
-            <div class="card">
-                <h3>Practice Questions</h3>
-                <p>Test your knowledge with practice questions and quizzes.</p>
-                <a href="#">Learn More</a>
+
+            <div class="question">
+                <p>All of the following are properties of water EXCEPT:</p>
             </div>
-            <div class="card">
-                <h3>Key Concepts</h3>
-                <p>Summarized notes of essential concepts covered in AP Biology.</p>
-                <a href="#">Learn More</a>
+
+            <div class="options">
+                <button class="option">Cohesion</button>
+                <button class="option">High specific heat</button>
+                <button class="option">Nonpolar</button>
+                <button class="option">Solvent of life</button>
+            </div>
+
+            <div class="question-footer">
+                <span>1/5</span>
+                <button class="next-button">Next Question</button>
             </div>
         </div>
-    </section>
+    </main>
+
 </div>
 
 <!-- Footer -->
