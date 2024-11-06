@@ -104,6 +104,12 @@ body, html {
     margin-bottom: 20px;
 }
 
+.features p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
 .feature-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -118,12 +124,33 @@ body, html {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform var(--transition-time), box-shadow var(--transition-time);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
     font-weight: 600;
     font-size: 1.1em;
     color: var(--color-primary);
+}
+
+.card h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card a {
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+.card a:hover {
+    color: var(--color-accent);
 }
 
 .card:hover {
@@ -133,9 +160,8 @@ body, html {
     color: var(--color-neutral-white);
 }
 
-.card a {
-    text-decoration: none;
-    color: inherit;
+.card a:hover {
+    color: var(--color-neutral-white);
 }
 
 /* Footer */
