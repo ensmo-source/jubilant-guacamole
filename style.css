@@ -1,16 +1,21 @@
 /* Updated Feature Section for Subjects Page */
+.features {
+    padding-top: 100px; /* Adds space to push content below navbar */
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+
 .features h1 {
     font-size: 2em;
     margin-bottom: 20px;
 }
 
+/* Button-like course cubes */
 .feature-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
 }
 
 .card {
