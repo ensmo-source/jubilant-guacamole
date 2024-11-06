@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ subject_name }}</h1>
+<div class="content-section">
+    <h2>Resources</h2>
+    <p>Find notes, flashcards, and guides tailored for {{ subject_name }}.</p>
+    <a href="/resources/{{ subject_slug }}">View Resources</a>
+</div>
+
+<div class="content-section">
+    <h2>Study Tools</h2>
+    <p>Access tools like quizzes and interactive study guides for {{ subject_name }}.</p>
+    <a href="/study-tools/{{ subject_slug }}">Start Studying</a>
+</div>
+{% endblock %}
