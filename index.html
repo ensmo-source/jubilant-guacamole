@@ -1,57 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subjects</title>
-    <link rel="icon" href="https://ensmo-source.github.io/jubilant-guacamole/splash.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            color: #333;
-        }
-        .navbar {
-            display: flex;
-            align-items: center;
-            padding: 10px 20px;
-            font-size: 1em;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            justify-content: center;
-            gap: 20px;
-        }
-        .navbar img {
-            height: 30px;
-            margin-right: 20px;
-        }
-        .navbar a {
-            color: #333;
-            text-decoration: none;
-            padding: 5px 10px;
-        }
-        h1 {
-            font-weight: 600;
-            font-size: 2.5em;
-            color: #333;
-            margin: 60px 0 20px; /* Margin to space out from the navbar */
-        }
-    </style>
-</head>
-<body>
-    <div class="navbar">
-        <img src="https://ensmo-source.github.io/jubilant-guacamole/splash.png" alt="Logo">
-        <a href="https://ensmo-source.github.io/jubilant-guacamole/">Home</a>
-        <a href="https://ensmo-source.github.io/jubilant-guacamole/subjects.html">Subjects</a>
+{% extends "base.html" %}
+
+{% block content %}
+<div class="hero">
+    <h1>Welcome to Splash!</h1>
+    <p>Your go-to platform for efficient study resources and tools.</p>
+    <a href="/subjects" class="cta-button">Get Started</a>
+</div>
+
+<div class="features">
+    <h2>Explore by Subject</h2>
+    <div class="subject-cards">
+        <!-- Sample subjects with icons for Science, Math, History -->
+        <div class="card"><a href="/subjects/science">Science</a></div>
+        <div class="card"><a href="/subjects/math">Math</a></div>
+        <div class="card"><a href="/subjects/history">History</a></div>
     </div>
-    <h1>Subjects</h1>
-</body>
-</html>
+</div>
+{% endblock %}
+
