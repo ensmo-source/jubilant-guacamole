@@ -20,7 +20,7 @@ body, html {
     background-color: var(--color-background);
     color: var(--color-neutral-black);
     font-size: 16px;
-    min-height: 100vh; /* Ensures full height of the viewport is used */
+    min-height: 100vh;
 }
 
 /* Navbar Styling */
@@ -53,16 +53,16 @@ body, html {
     height: 30px;
 }
 
-/* Main Content Wrapper to Stretch Content */
+/* Main Content Wrapper */
 .main-content {
-    min-height: calc(100vh - 160px); /* Adjusted to include header/footer height */
-    padding-bottom: 20px; /* Ensures space for the footer */
+    padding-top: 120px; /* Adds space below navbar */
+    padding-bottom: 20px; /* Ensures space for footer */
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 180px 20px 40px;
+    padding: 40px 20px;
     background-color: #e0f7fa;
     color: var(--color-neutral-black);
 }
@@ -94,7 +94,6 @@ body, html {
 
 /* Feature Section */
 .features {
-    padding-top: 80px;
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
@@ -112,29 +111,31 @@ body, html {
     margin-top: 20px;
 }
 
-/* Resources Section */
-.resources {
-    padding-top: 80px;
-    max-width: 1000px;
-    margin: 40px auto;
+.card {
+    background-color: var(--color-neutral-white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-time), box-shadow var(--transition-time);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-}
-
-.resources h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.resources p {
+    font-weight: 600;
     font-size: 1.1em;
-    color: #666;
-    margin-bottom: 20px;
+    color: var(--color-primary);
 }
 
-.resource-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: var(--color-accent);
+    color: var(--color-neutral-white);
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Footer */
