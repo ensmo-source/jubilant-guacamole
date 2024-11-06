@@ -1,111 +1,16 @@
-/* Global Styling */
-:root {
-    --color-background: #f9f9f9;
-    --color-primary: #007bff;
-    --color-neutral-white: #ffffff;
-    --color-neutral-black: #333333;
-    --color-accent: #50d2c2;
-    --font-main: 'Poppins', sans-serif;
-    --transition-time: 0.2s;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body, html {
-    font-family: var(--font-main);
-    background-color: var(--color-background);
-    color: var(--color-neutral-black);
-    font-size: 16px;
-}
-
-/* Navbar Styling */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: var(--color-neutral-white);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: var(--color-neutral-black);
-    margin-left: 20px;
-    font-weight: 500;
-    transition: color var(--transition-time);
-}
-
-.navbar a:hover {
-    color: var(--color-primary);
-}
-
-.logo {
-    height: 30px;
-}
-
-.user-icon {
-    width: 30px;
-    cursor: pointer;
-}
-
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 120px 20px 40px;
-    background-color: #e0f7fa;
-    color: var(--color-neutral-black);
-}
-
-.hero h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--color-primary);
-    color: var(--color-neutral-white);
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color var(--transition-time);
-}
-
-.cta-button:hover {
-    background-color: var(--color-accent);
-}
-
-/* Feature Section */
-.features {
-    max-width: 800px;
-    margin: 60px auto;
-    text-align: center;
-}
-
-.features h2 {
-    font-size: 1.8em;
+/* Updated Feature Section for Subjects Page */
+.features h1 {
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
 .feature-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .card {
@@ -114,39 +19,23 @@ body, html {
     border-radius: 8px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform var(--transition-time), box-shadow var(--transition-time);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1em;
+    color: var(--color-primary);
 }
 
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.card h3 {
-    font-size: 1.4em;
-    margin-bottom: 10px;
-}
-
-.card p {
-    font-size: 1em;
-    color: #666;
+    background-color: var(--color-accent);
+    color: var(--color-neutral-white);
 }
 
 .card a {
     text-decoration: none;
-    color: var(--color-primary);
-    font-weight: 500;
-}
-
-.card a:hover {
-    color: var(--color-accent);
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: var(--color-neutral-white);
-    color: #777;
-    font-size: 0.9em;
-    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+    color: inherit;
 }
