@@ -55,7 +55,7 @@ body, html {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 150px 20px 40px; /* Adjusted padding to ensure visibility */
+    padding: 180px 20px 40px; /* Adjusted padding to ensure visibility */
     background-color: #e0f7fa;
     color: var(--color-neutral-black);
 }
@@ -87,18 +87,44 @@ body, html {
 
 /* Feature Section */
 .features {
-    padding-top: 60px;
+    padding-top: 80px;
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
 }
 
 .features h2 {
-    font-size: 1.8em;
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
 .feature-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Resources Section */
+.resources {
+    padding-top: 80px;
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.resources h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.resources p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.resource-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
