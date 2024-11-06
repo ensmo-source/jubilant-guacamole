@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+        }
+        .navbar img {
+            height: 40px;
+            margin-right: 20px;
+        }
+        .navbar a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            color: black;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .search-container {
+            margin-left: auto;
+        }
+        .search-container input {
+            padding: 5px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin-top: 50px;
+        }
+        h2 {
+            text-align: center;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="/static/splash.png" alt="Logo">
+        <a href="#">Home</a>
+        <div class="dropdown">
+            <a href="#">Subjects</a>
+            <div class="dropdown-content">
+                <a href="#">Math</a>
+                <a href="#">Science</a>
+                <a href="#">History</a>
+            </div>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search subjects...">
+        </div>
+    </div>
+    <h1>Splash.</h1>
+    <h2>Studying, made easier.</h2>
+</body>
+</html>
 
