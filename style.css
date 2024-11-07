@@ -1,43 +1,181 @@
-/* General Button Styles */
-.btn, .subject-button, .cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s;
+/* General Styling */
+:root {
+    --color-background: #f9f9f9;
+    --color-primary: #007bff;
+    --color-neutral-white: #ffffff;
+    --color-neutral-black: #333333;
+    --color-accent: #50d2c2;
+    --font-main: 'Poppins', sans-serif;
 }
 
-/* CTA and Main Buttons */
-.cta-button {
-    background-color: #007bff;
-    color: #fff;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: var(--font-main);
+    background-color: var(--color-background);
+    color: var(--color-neutral-black);
+    font-size: 16px;
+    min-height: 100vh;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: var(--color-neutral-white);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
     text-decoration: none;
+    color: var(--color-neutral-black);
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.navbar a:hover {
+    color: var(--color-primary);
+}
+
+.logo {
+    height: 30px;
+}
+
+/* Main Content Layout with Spacing Adjustments */
+.main-content {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Hero Section Styling */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #e0f7fa;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--color-primary);
+    color: var(--color-neutral-white);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .cta-button:hover {
     background-color: #0056b3;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
-.more-info {
-    background-color: #00aaff;
-}
-
-.more-info:hover {
-    background-color: #0088cc;
-}
-
-/* Subject Page Button Styling */
-.subject-button {
-    background-color: #50d2c2;
-    margin: 10px;
-    width: 150px;
-    height: 50px;
-    font-size: 1.1em;
+/* Features Section with Larger Spacing */
+.features {
+    max-width: 1200px;
+    padding: 40px 20px;
     text-align: center;
+}
+
+.features h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.feature-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.feature-card {
+    background-color: var(--color-neutral-white);
+    padding: 30px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    color: var(--color-neutral-white);
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Subject Button Styles with Larger Gaps */
+.subject-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.subject-button {
+    background-color: var(--color-accent);
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .subject-button:hover {
@@ -45,26 +183,20 @@
     transform: scale(1.05);
 }
 
-/* Animations */
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-    40% {transform: translateY(-10px);}
-    60% {transform: translateY(-5px);}
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: var(--color-neutral-white);
+    color: #777;
+    font-size: 0.9em;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Animations and Effects */
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
-}
-
-@keyframes zoomIn {
-    from {transform: scale(0.9);}
-    to {transform: scale(1);}
-}
-
-/* Applying Animations */
-.bounce-animation {
-    animation: bounce 2s infinite;
 }
 
 .fade-in {
@@ -72,30 +204,12 @@
     opacity: 0;
 }
 
-.zoom-animation {
-    animation: zoomIn 0.5s ease-out forwards;
+.bounce-animation {
+    animation: bounce 2s infinite;
 }
 
-/* Title Animation */
-.title-animation {
-    animation: fadeIn 1s ease-out forwards;
-    text-align: center;
-    margin-top: 30px;
-}
-
-/* Styling for Cards */
-.feature-card, .subject-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    margin: 20px;
-    transition: transform 0.3s;
-}
-
-.feature-card:hover, .subject-card:hover {
-    transform: scale(1.02);
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-5px);}
 }
